@@ -77,8 +77,11 @@ public class SocketClient{
 		int port = in.nextInt();
 		sc.port = port;
 
-		InetAddress IP = InetAddress.getLocalHost();	//use getLocalHost for localhost
+		//InetAddress IP = InetAddress.getLocalHost();	//use getLocalHost for localhost
 														//getByName("127.0.1.1")
+			
+		InetAddress IP = InetAddress.getByName("192.168.1.1");
+		
 		sc.IP = IP;//test
 		
 		//test, change argument
